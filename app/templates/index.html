@@ -1,0 +1,25 @@
+
+{% extends "base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='cssstyle.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-12">     
+            <h1>Detect Celebrity Face!</h1>
+            <p>Select on an image and scroll to see who it is. Upload your own celebrities too!</p>
+        </div>
+        {% for image in imageCollection %}
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <img id="myimg" class="img-responsive" src="{{url_for("send_image", image = image)}}" name={{image}} onclick="javascript:imageOnClick(this)"/>
+        </div>
+        {% endfor %}  
+    </div>
+    <div id="myModal" class="modal"> 
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+{% endblock %}

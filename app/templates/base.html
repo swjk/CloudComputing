@@ -1,0 +1,21 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Microblog</title>
+        {% else %}
+        <title>Welcome to the page</title>
+        {% endif %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+                    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="{{url_for('static', filename='jquery-3.3.1.min.js')}}"></script>
+        {% block header %} {% endblock %}
+    </head>
+    <body>
+        <div>Welcome to the page: <a href="/index">Home</a>  <a href="/upload">Upload</a></div>
+        <hr>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+        <script src="{{url_for('static', filename='jsstyle.js')}}"></script>
+    </body>
+</html>
