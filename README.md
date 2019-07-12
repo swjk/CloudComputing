@@ -3,7 +3,7 @@ Site to detect celebrity faces hosted on AWS using (Load Balanced EC2s, Amazon R
 
 ![Alt text](p1.png?raw=true "HomePage")
 
-![Alt text](p2.png?raw=true "Extract Celebrities")
+![Alt text](p0.png?raw=true "Extract Celebrities")
 
 
 
