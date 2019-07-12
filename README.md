@@ -1,5 +1,5 @@
 # CloudComputing
-Site to detect celebrity faces hosted on AWS using (Load Balanced EC2s, Amazon Rekognition, Docker + trialed with Kubernetes Cluster)
+Site to detect celebrity faces hosted on AWS using - Load Balanced EC2s, Amazon Rekognition, Docker + trialed with Kubernetes Cluster
 
 ![Alt text](p1.png?raw=true "HomePage")
 
